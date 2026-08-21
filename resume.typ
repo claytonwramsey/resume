@@ -108,5 +108,5 @@ B.S., Electrical Engineering; B.A., Computer Science #h(1fr) GPA 3.85, _cum laud
 
 #section[Skills]
 #v(0.55em, weak: false)
-- *Programming:* Rust, Python, C, C++, Java, MATLAB, JavaScript, Docker, Pixi
+- *Programming:* Rust, Python, C, C++, Java, MATLAB, JavaScript, Docker, Pixi, ROS
 - *Robotics / Research:* task and motion planning, planning under uncertainty, SIMD and GPU hardware acceleration, parallel programming, machine learning
