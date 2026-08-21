@@ -1,8 +1,8 @@
 #let accent = rgb("#000000")
 #let leading = 0.6em
 
-#set page(paper: "us-letter", margin: (x: 0.5in, y: 0.5in))
-#set text(font: "Inter", size: 10pt, lang: "en")
+#set page(paper: "us-letter", margin: (x: 0.75in, y: 0.75in))
+#set text(size: 10pt, lang: "en")
 #set par(leading: leading, spacing: 0.5em)
 #set list(marker: [•], indent: 0em, spacing: leading)
 
@@ -11,10 +11,10 @@
   stack(
     dir: ttb,
     spacing: 0.2em,
-    text(font: "Montserrat", size: 13pt, weight: "bold", title),
+    text(font: "Montserrat", size: 12pt, weight: "bold", title),
     line(length: 100%, stroke: 0.6pt),
   )
-  v(0.05em)
+  v(0.0em)
 }
 
 #let entry(title, location, subtitle, dates) = {
@@ -31,7 +31,7 @@
 
 // Header
 #align(center)[
-  #text(font: "Montserrat", size: 18pt, weight: "bold")[Clayton W. Ramsey] \
+  #text(font: "Montserrat", size: 16pt, weight: "bold")[Clayton W. Ramsey] \
   #v(0.8em)
   #show link: underline
   #link("mailto:claytonwramsey@gmail.com")[claytonwramsey\@gmail.com] ~~ #link(
