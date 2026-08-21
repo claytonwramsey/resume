@@ -62,7 +62,7 @@ B.S., Electrical Engineering; B.A., Computer Science #h(1fr) GPA 3.85, _cum laud
 - Proposed CAPT, a SIMD-parallel data structure for fast collision checking with point clouds.
 
 #entry("NASA Johnson Space Center", "Houston, TX", "Visiting Researcher", "May 2025 - Present")
-- Demonstrated my research in online planning on iMETRO, the robot testing environment at JSC.
+- Demonstrated research in online planning on iMETRO, the robot testing environment at JSC.
 
 #entry("Rice University", "Houston, TX", "Undergraduate Researcher", "May 2021 - Aug 2022")
 - Implemented a path-plan visualization tool for human verification of motion plans.
