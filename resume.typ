@@ -1,7 +1,7 @@
 #let accent = rgb("#000000")
 #let leading = 0.6em
 
-#set page(paper: "us-letter", margin: (x: 0.75in, y: 0.75in))
+#set page(paper: "us-letter", margin: (x: 1in, y: 0.8in))
 #set text(size: 10pt, lang: "en")
 #set par(leading: leading, spacing: 0.5em)
 #set list(marker: [•], indent: 0em, spacing: leading)
@@ -29,10 +29,15 @@
   )
 }
 
+#let award(url, title, org, date) = grid(
+  columns: (1fr, auto),
+  [#link(url)[*#title*], #org], [#emph(date)],
+)
+
 // Header
 #align(center)[
   #text(font: "Montserrat", size: 16pt, weight: "bold")[Clayton W. Ramsey] \
-  #v(0.8em)
+  #v(0.4em)
   #show link: underline
   #link("mailto:claytonwramsey@gmail.com")[claytonwramsey\@gmail.com] ~~ #link(
     "https://claytonwramsey.com",
@@ -80,11 +85,26 @@ B.S., Electrical Engineering; B.A., Computer Science #h(1fr) GPA 3.85, _cum laud
 
 #section[Awards and honors]
 #v(0.55em, weak: false)
-- #link("https://www.nasa.gov/directorates/stmd/space-tech-research-grants/nstgro/")[*NSTGRO Fellowship*], NASA, 2024.
-- #link("https://ndseg.sysplus.com/NDSEG/about")[*NDSEG Fellowship*], Department of Defense, 2024.
-- #link("https://www.usfigureskating.org/skate/test-structure")[*Gold Medalist*], United States Figure Skating, 2018, 2021, and 2024.
-- #link("https://hkn.ieee.org/")[*Eta Kappa Nu Member*], IEEE, 2023.
-- #link("https://registrar.rice.edu/students/academic-honors")[*President's Honor Roll*], Rice University, Fall 2022 and Spring 2023.
+- #award(
+    "https://www.nasa.gov/directorates/stmd/space-tech-research-grants/nstgro/",
+    "NSTGRO Fellowship",
+    "NASA",
+    "2024",
+  )
+- #award("https://ndseg.sysplus.com/NDSEG/about", "NDSEG Fellowship", "Department of Defense", "2024")
+- #award(
+    "https://www.usfigureskating.org/skate/test-structure",
+    "Gold Medalist",
+    "United States Figure Skating",
+    "2018, 2021, and 2024",
+  )
+- #award("https://hkn.ieee.org/", "Eta Kappa Nu Member", "IEEE", "2023")
+- #award(
+    "https://registrar.rice.edu/students/academic-honors",
+    "President's Honor Roll",
+    "Rice University",
+    "Fall 2022 and Spring 2023",
+  )
 
 #section[Skills]
 #v(0.55em, weak: false)
